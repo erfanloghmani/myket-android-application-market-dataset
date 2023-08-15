@@ -47,8 +47,15 @@ For a detailed summary of the data's statistics, including information on users,
 
 ## Citation
 
-If you use this dataset in your research, please cite the following paper:
+If you use this dataset in your research, please cite the following [preprint](https://arxiv.org/abs/2308.06862):
 
 ```
-
+@misc{loghmani2023effect,
+      title={Effect of Choosing Loss Function when Using T-batching for Representation Learning on Dynamic Networks}, 
+      author={Erfan Loghmani and MohammadAmin Fazli},
+      year={2023},
+      eprint={2308.06862},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
