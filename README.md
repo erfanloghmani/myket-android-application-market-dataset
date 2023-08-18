@@ -1,6 +1,6 @@
 # Myket Android Application Install Dataset
 
-This dataset contains information on application install interactions of users in the [Myket](https://myket.ir/) android application market. The dataset was created for the purpose of evaluating interaction prediction models, requiring user and item identifiers along with timestamps of the interactions.
+This dataset contains information on application install interactions of users in the [Myket](https://myket.ir/) android application market. The dataset was created for the purpose of evaluating interaction prediction models, requiring user and item identifiers along with timestamps of the interactions. Hence, the dataset can be used for interaction prediction and building a recommendation system. Furthermore, the data forms a dynamic network of interactions, and we can also perform network representation learning on the nodes in the network, which are users and applications.
 
 ## Data Creation
 
@@ -44,6 +44,20 @@ For a detailed summary of the data's statistics, including information on users,
 | co.palang.QuizOfKings              | 2589                  |
 | com.nazdika.app                    | 2436                  |
 | com.digikala                       | 2413                  |
+
+## Comparison with SNAP Datasets
+
+The Myket dataset introduced in this repository exhibits distinct characteristics compared to the real-world datasets used by the project. The table below provides a comparative overview of the key dataset characteristics:
+
+| Dataset         | #Users           | #Items          | #Interactions | Average Interactions per User | Average Unique Items per User |
+| --------------- | ---------------- | --------------- | ------------- | ----------------------------- | ----------------------------- |
+| **Myket** | **10,000** | **7,988** | 694,121       | 69.4                          | 54.6                          |
+| LastFM          | 980              | 1,000           | 1,293,103     | 1,319.5                       | 158.2                         |
+| Reddit          | **10,000** | 984             | 672,447       | 67.2                          | 7.9                           |
+| Wikipedia       | 8,227            | 1,000           | 157,474       | 19.1                          | 2.2                           |
+| MOOC            | 7,047            | 97              | 411,749       | 58.4                          | 25.3                          |
+
+The Myket dataset stands out by having an ample number of both users and items, highlighting its relevance for real-world, large-scale applications. Unlike LastFM, Reddit, and Wikipedia datasets, where users exhibit repetitive item interactions, the Myket dataset contains a comparatively lower amount of repetitive interactions. This unique characteristic reflects the diverse nature of user behaviors in the Android application market environment.
 
 ## Citation
 
