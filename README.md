@@ -10,13 +10,17 @@ We further subsampled and cleaned the data to focus on application download inte
 
 ## Data Structure
 
-The dataset follows the same format as the datasets used in the "[JODIE: Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks](https://github.com/claws-lab/jodie)" (ACM SIGKDD 2019) project. However, this data does not contain state labels and interaction features, resulting in associated columns being all zero.
+The dataset has two main files.
+
+- `myket.csv`: This file contains the interaction information and follows the same format as the datasets used in the "[JODIE: Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks](https://github.com/claws-lab/jodie)" (ACM SIGKDD 2019) project. However, this data does not contain state labels and interaction features, resulting in associated columns being all zero.
+- `app_info_sample.csv`: This file comprises features associated with applications present in the sample. For each individual application, information such as the approximate number of installs, average rating, count of ratings, and category are included. These features provide insights into the applications present in the dataset.
 
 ## Dataset Details
 
 - Total Instances: 694,121 install interaction instances
 - Instances Format: Triplets of user_id, app_name, timestamp
 - 10,000 users and 7,988 android applications
+- Item features for 7,606 applications
 
 For a detailed summary of the data's statistics, including information on users, applications, and interactions, please refer to the Python notebook available at [summary-stats.ipynb](summary-stats.ipynb). The notebook provides an overview of the dataset's characteristics and can be helpful for understanding the data's structure before using it for research or analysis.
 
