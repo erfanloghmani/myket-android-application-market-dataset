@@ -26,7 +26,42 @@ Additionally, the `data_int_index` directory contains dataset files where app_na
 
 For a detailed summary of the data's statistics, including information on users, applications, and interactions, please refer to the Python notebook available at [summary-stats.ipynb](summary-stats.ipynb). The notebook provides an overview of the dataset's characteristics and can be helpful for understanding the data's structure before using it for research or analysis.
 
-### Top 20 Most Installed Applications
+## Using the Dataset
+
+To utilize the dataset, you have several options:
+
+### 1. Directly with JODIE and JODIE with Modified Loss Functions
+
+You can use the dataset directly with [JODIE](https://github.com/claws-lab/jodie) and [JODIE with modified loss functions](https://github.com/erfanloghmani/effect-of-loss-function-tbatching) by placing the `myket.csv` file under the `data/` directory of your project.
+
+### 2. With PyTorch Geometric
+
+The dataset is also available in [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MyketDataset.html). To use it, first install the nightly version of PyTorch Geometric using the following command:
+
+```bash
+pip install pyg-nightly
+```
+
+Then, in your Python code, you can load the dataset as follows:
+
+```python
+from torch_geometric.datasets import MyketDataset
+dataset = MyketDataset("myket")
+```
+
+To get started quickly, you can refer to the sample code provided in [this Colab notebook](https://colab.research.google.com/drive/1dGqOu9akCcskI1NTFEVvFNmxznz4o-l7?usp=sharing). The notebook contains code examples and explanations to help you work with the dataset.
+
+### 3. Using DyGLib
+
+The dataset is also integrated into the [DyGLib (Dynamic Graph Learning Library)](https://github.com/yule-BUAA/DyGLib) project. DyGLib offers a range of dynamic graph learning methods for evaluation. You can learn how to use the dataset with DyGLib by referring to [this Colab notebook](https://colab.research.google.com/drive/1UV6DkoYerQfxyebt4QrUJhLgNZH0XPBl?usp=sharing), which provides instructions and code examples.
+
+By exploring these resources, you'll be able to effectively work with the Myket Android Application Install Dataset and leverage it for your research or projects.
+
+### 4. Using Hugging Face
+
+The dataset is also available at Hugging Face. You can take a look at the data and dataset card [here](https://huggingface.co/datasets/erfanloghmani/myket-android-application-recommendation-dataset).
+
+## Top 20 Most Installed Applications
 
 | Package Name                       | Count of Interactions |
 | ---------------------------------- | --------------------- |
